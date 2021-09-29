@@ -1,0 +1,4 @@
+# Ignoring these as they're pull from git themselves
+zsh-autosuggestions
+zsh-syntax-highlighting
+
