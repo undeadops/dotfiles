@@ -9,8 +9,6 @@ source $HOME/.dotfiles/zsh/paths.sh
 
 source $HOME/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-PATH="/usr/local/bin:$PATH"
-
 export LANG="en_US.UTF-8"
 
 
