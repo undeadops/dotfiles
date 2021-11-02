@@ -3,7 +3,10 @@
 # alias ohmyzsh="mate ~/.oh-my-zsh"wq
 alias vi="vim"
 
-
+# Terraform short cuts
+alias tfplan="terraform plan -out tf.plan"
+alias tfapply="terraform apply tf.plan"
+alias tfinit="terraform init"
 
 # Automatically expand all aliases:
 # - don't forget the actual commands
