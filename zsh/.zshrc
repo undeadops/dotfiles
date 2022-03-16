@@ -2,12 +2,12 @@ export LANG=en_US
 
 precmd_functions=()
 
-source $HOME/.dotfiles/zsh/history.sh
+source $HOME/history.sh
 
-source $HOME/.dotfiles/zsh/aliases.sh
-source $HOME/.dotfiles/zsh/paths.sh
+source $HOME/aliases.sh
+source $HOME/paths.sh
 
-source $HOME/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export LANG="en_US.UTF-8"
 
