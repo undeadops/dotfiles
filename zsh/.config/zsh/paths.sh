@@ -15,4 +15,4 @@ export NOTES_CLI_HOME="$HOME/.notes"
 export NOTES_CLI_EDITOR=vim # Set your favorite editor
 
 # Search for separate Kubeconfigs
-export KUBECONFIG=$HOME/.kube/teleport:$HOME/.kube/config
+export KUBECONFIG=$HOME/.kube/config

@@ -1,7 +1,7 @@
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"wq
-alias vi="vim"
+alias vi="nvim"
 
 # Terraform short cuts
 alias tfplan="terraform plan -out tf.plan"

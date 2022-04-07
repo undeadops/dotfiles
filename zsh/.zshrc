@@ -2,12 +2,13 @@ export LANG=en_US
 
 precmd_functions=()
 
-source $HOME/history.sh
+source $HOME/.config/zsh/history.sh
 
-source $HOME/aliases.sh
-source $HOME/paths.sh
+source $HOME/.config/zsh/aliases.sh
+source $HOME/.config/zsh/paths.sh
 
-source $HOME/dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 export LANG="en_US.UTF-8"
 
