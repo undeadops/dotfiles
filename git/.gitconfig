@@ -1,0 +1,28 @@
+[core]
+  editor = vim
+
+[push]
+  default = simple
+
+[branch]
+  autosetupmerge = always
+
+[user]
+  name = Mitch Anderson 
+  email = mitch.anderson@undeadops.xyz 
+
+[color]
+  ui = true
+
+[color "branch"]
+  current = green reverse
+  local = green
+  remote = blue
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red
+  new = green
+[pull]
+	rebase = false
