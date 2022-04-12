@@ -8,7 +8,14 @@ return require('packer').startup(
 
     -- LSP
     use 'neovim/nvim-lspconfig'
-
+    -- Terminal
+		use {
+                  's1n7ax/nvim-terminal',
+                  config = function()
+                  vim.o.hidden = true
+                  require('nvim-terminal').setup()
+                  end,
+                } 
     -- Language Things
 		use 'fatih/vim-go'
 		use 'tpope/vim-rails'
