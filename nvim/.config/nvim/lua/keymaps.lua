@@ -40,8 +40,10 @@ vim.api.nvim_set_keymap('n', '<leader>gt', ':GoTest<CR>', opts)
 vim.api.nvim_set_keymap('n', '<leader>god', ':GoDef<CR>', opts)
 
 -- Telescope
-vim.api.nvim_set_keymap('n', '<C-p>', ':Telescope find_files<CR>', opts)
-vim.api.nvim_set_keymap('n', '<leader>tg', ':Telescope live_grep<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>ff', ':Telescope find_files<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>fg', ':Telescope live_grep<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>fb', ':Telescope buffers<CR>', opts)
+
 
 -- Airline
 vim.api.nvim_set_keymap('n', '<leader>1', '<Plug>AirlineSelectTab1', opts)
