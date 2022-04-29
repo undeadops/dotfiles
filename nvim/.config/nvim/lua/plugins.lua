@@ -4,18 +4,19 @@ return require('packer').startup(
 	function()
 		use 'wbthomason/packer.nvim'
     -- Themes
-    use 'tanvirtin/monokai.nvim' 
+    use 'tanvirtin/monokai.nvim'
 
     -- LSP
     use 'neovim/nvim-lspconfig'
+
     -- Terminal
 		use {
-                  's1n7ax/nvim-terminal',
-                  config = function()
-                  vim.o.hidden = true
-                  require('nvim-terminal').setup()
-                  end,
-                } 
+      's1n7ax/nvim-terminal',
+      config = function()
+      vim.o.hidden = true
+      require('nvim-terminal').setup()
+      end,
+    }
     -- Language Things
 		use 'fatih/vim-go'
 		use 'tpope/vim-rails'
