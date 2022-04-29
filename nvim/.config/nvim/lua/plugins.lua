@@ -27,9 +27,10 @@ return require('packer').startup(
 		use 'isRuslan/vim-es6'
 		use 'stephpy/vim-yaml'
 		use 'uarun/vim-protobuf'
-                use "neovim/nvim-lspconfig"
-                use "jose-elias-alvarez/null-ls.nvim"
-                use "jose-elias-alvarez/nvim-lsp-ts-utils"
+
+		-- Typescript things
+		use "jose-elias-alvarez/null-ls.nvim"
+    use "jose-elias-alvarez/nvim-lsp-ts-utils"
 
     -- Utilities
 		use 'flazz/vim-colorschemes'
