@@ -5,4 +5,4 @@ require('keymaps')
 
 local vim = vim
 
-vim.g,mapleader = ','
+vim.g.mapleader = ','
