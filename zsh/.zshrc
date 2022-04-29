@@ -88,7 +88,7 @@ export UPDATE_ZSH_DAYS=13
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting colorize golang kubectl kubectx kube-ps1 iterm2)
+plugins=(aliases git colorize golang kubectl kubectx kube-ps1 iterm2 aws)
 
 source $ZSH/oh-my-zsh.sh
 
