@@ -105,15 +105,8 @@ export LANG=en_US.UTF-8
 # is it installed
 brew list thefuck &>/dev/null && eval $(thefuck --alias)
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '$HOME/opt/google-cloud-sdk/path.zsh.inc' ]; then . '$HOME/opt/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '$HOME/opt/google-cloud-sdk/completion.zsh.inc' ]; then . '$HOME/opt/google-cloud-sdk/completion.zsh.inc'; fi
-
-# MX Added for teleport :vomit: 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 autoload -U +X bashcompinit && bashcompinit 
 autoload -U +X compinit && compinit 
 
+# asdf setup, run "brew install asdf"
+. $(brew --prefix asdf)/asdf.sh
