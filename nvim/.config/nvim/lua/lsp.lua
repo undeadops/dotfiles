@@ -73,6 +73,11 @@ lspconfig.tsserver.setup({
         on_attach(client, bufnr)
     end,
 })
+
+-- terraform lsp
+lspconfig.terraformls.setup{}
+lspconfig.tflint.setup{}
+
 null_ls.setup({
     sources = {
         null_ls.builtins.diagnostics.eslint,

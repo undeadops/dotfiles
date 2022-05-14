@@ -32,6 +32,9 @@ return require('packer').startup(
 		use "jose-elias-alvarez/null-ls.nvim"
     use "jose-elias-alvarez/nvim-lsp-ts-utils"
 
+		-- Terraform things
+		use "hashivim/vim-terraform"
+
     -- Utilities
 		use 'flazz/vim-colorschemes'
 		use 'christoomey/vim-tmux-navigator'

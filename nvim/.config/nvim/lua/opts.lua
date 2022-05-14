@@ -109,6 +109,12 @@ vim.cmd('autocmd Filetype conf setlocal tabstop=2 shiftwidth=2 softtabstop=2')
 vim.cmd('autocmd Filetype json setlocal tabstop=2 shiftwidth=2 softtabstop=2')
 vim.cmd('autocmd Filetype vimwiki setlocal tabstop=2 shiftwidth=2 softtabstop=2')
 vim.cmd('autocmd Filetype lua setlocal tabstop=2 shiftwidth=2 softtabstop=2')
+vim.cmd('autocmd Filetype terraform setlocal tabstop=2 shiftwidth=2 softtabstop=2')
+
+-- Terraform
+vim.cmd('let g:terraform_align = 1')
+vim.cmd('let g:terraform_fmt_on_save = 1')
+vim.cmd('let g:terraform_fold_sections = 1')
 
 -- JSON Formatter with Python Support
 vim.cmd('let g:python_host_prog = "/usr/bin/python2.7"')
