@@ -8,6 +8,7 @@ return require('packer').startup(
 
     -- LSP
     use 'neovim/nvim-lspconfig'
+    use 'ray-x/lsp_signature.nvim'
 
     -- Terminal
 		use {

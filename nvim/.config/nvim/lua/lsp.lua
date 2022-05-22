@@ -15,7 +15,13 @@
 -- lsp.sumneko.setup{}
 --
 lspconfig = require('lspconfig')
-lspconfig.gopls.setup{}
+lspsignature = require('lsp_signature')
+
+lspconfig.gopls.setup{
+	on_attach = function(client, bufnr)
+		lspsignature.on_attach()
+	end
+}
 
 lspconfig.solargraph.setup{
   settings = {
@@ -71,11 +77,14 @@ lspconfig.tsserver.setup({
         buf_map(bufnr, "n", "gi", ":TSLspRenameFile<CR>")
         --buf_map(bufnr, "n", "go", ":TSLspImportAll<CR>")
         on_attach(client, bufnr)
+				lspsignature.on_attach()
     end,
 })
 
 -- terraform lsp
-lspconfig.terraformls.setup{}
+lspconfig.terraformls.setup{
+  lspsignature.on_attach()
+}
 lspconfig.tflint.setup{}
 
 null_ls.setup({
