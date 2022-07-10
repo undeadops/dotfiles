@@ -110,3 +110,7 @@ autoload -U +X compinit && compinit
 
 # asdf setup, run "brew install asdf"
 . $(brew --prefix asdf)/asdf.sh
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/mitch/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
