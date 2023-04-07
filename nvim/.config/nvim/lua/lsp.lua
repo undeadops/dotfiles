@@ -15,7 +15,13 @@
 -- lsp.sumneko.setup{}
 --
 lspconfig = require('lspconfig')
-lspconfig.gopls.setup{}
+lspsignature = require('lsp_signature')
+
+lspconfig.gopls.setup{
+	on_attach = function(client, bufnr)
+		lspsignature.on_attach()
+	end
+}
 
 lspconfig.solargraph.setup{
   settings = {
@@ -60,9 +66,28 @@ local on_attach = function(client, bufnr)
         vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()")
     end
 end
+<<<<<<< HEAD
+=======
+lspconfig.tsserver.setup({
+    on_attach = function(client, bufnr)
+        client.resolved_capabilities.document_formatting = false
+        client.resolved_capabilities.document_range_formatting = false
+        local ts_utils = require("nvim-lsp-ts-utils")
+        ts_utils.setup({})
+        ts_utils.setup_client(client)
+        buf_map(bufnr, "n", "gs", ":TSLspOrganize<CR>")
+        buf_map(bufnr, "n", "gi", ":TSLspRenameFile<CR>")
+        --buf_map(bufnr, "n", "go", ":TSLspImportAll<CR>")
+        on_attach(client, bufnr)
+				lspsignature.on_attach()
+    end,
+})
+>>>>>>> 87c58fe75c24b64b138f56da2f2ee06468c6061f
 
 -- terraform lsp
-lspconfig.terraformls.setup{}
+lspconfig.terraformls.setup{
+  lspsignature.on_attach()
+}
 lspconfig.tflint.setup{}
 
 null_ls.setup({
