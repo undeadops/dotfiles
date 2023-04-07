@@ -108,5 +108,10 @@ brew list thefuck &>/dev/null && eval $(thefuck --alias)
 autoload -U +X bashcompinit && bashcompinit 
 autoload -U +X compinit && compinit 
 
-# asdf setup, run "brew install asdf"
-. $(brew --prefix asdf)/asdf.sh
+export PATH="/opt/homebrew/opt/node@14/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/mitch/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/mitch/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/mitch/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/mitch/Downloads/google-cloud-sdk/completion.zsh.inc'; fi

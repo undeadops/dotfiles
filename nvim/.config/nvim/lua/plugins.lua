@@ -19,33 +19,20 @@ return require('packer').startup(
     }
     -- Language Things
 		use 'fatih/vim-go'
-		use 'tpope/vim-rails'
-		use 'vim-ruby/vim-ruby'
 		use 'thoughtbot/vim-rspec'
-		use 'robbles/logstash'
-		use 'pangloss/vim-javascript'
-		use 'isRuslan/vim-es6'
 		use 'stephpy/vim-yaml'
 		use 'uarun/vim-protobuf'
-
-		-- Typescript things
-		use "jose-elias-alvarez/null-ls.nvim"
-    use "jose-elias-alvarez/nvim-lsp-ts-utils"
 
 		-- Terraform things
 		use "hashivim/vim-terraform"
 
     -- Utilities
 		use 'flazz/vim-colorschemes'
-		use 'christoomey/vim-tmux-navigator'
 		use 'honza/vim-snippets'
 		use 'slim-template/vim-slim'
 		use 'bronson/vim-trailing-whitespace'
-		use 'Raimondi/delimitMate'
-		use 'ddollar/nerdcommenter'
 		use 'vim-syntastic/syntastic'
 		use 'preservim/nerdtree'
-		use 'airblade/vim-gitgutter'
 		use 'tpope/vim-fugitive'
 		use 'vim-airline/vim-airline'
 		use 'diepm/vim-rest-console'
