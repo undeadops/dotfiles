@@ -29,11 +29,15 @@ return require('packer').startup(
 
     -- Utilities
 		use 'flazz/vim-colorschemes'
+		use 'christoomey/vim-tmux-navigator'
 		use 'honza/vim-snippets'
 		use 'slim-template/vim-slim'
 		use 'bronson/vim-trailing-whitespace'
+		use 'Raimondi/delimitMate'
+		use 'ddollar/nerdcommenter'
 		use 'vim-syntastic/syntastic'
 		use 'preservim/nerdtree'
+		use 'airblade/vim-gitgutter'
 		use 'tpope/vim-fugitive'
 		use 'vim-airline/vim-airline'
 		use 'diepm/vim-rest-console'
