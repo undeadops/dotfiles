@@ -105,21 +105,10 @@ export LANG=en_US.UTF-8
 # is it installed
 brew list thefuck &>/dev/null && eval $(thefuck --alias)
 
-<<<<<<< HEAD
 autoload -U +X bashcompinit && bashcompinit 
 autoload -U +X compinit && compinit 
 
 export PATH="/opt/homebrew/opt/node@14/bin:$PATH"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/mitch/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/mitch/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/mitch/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/mitch/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-
-=======
-autoload -U +X bashcompinit && bashcompinit
-autoload -U +X compinit && compinit
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/mitch/.rd/bin:$PATH"
@@ -130,4 +119,3 @@ if [ -f '/Users/mitch/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/mitch/goo
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/mitch/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/mitch/google-cloud-sdk/completion.zsh.inc'; fi
->>>>>>> fed912c48458e426b02a676ef09868bfc505afe6
