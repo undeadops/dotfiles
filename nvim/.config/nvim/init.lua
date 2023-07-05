@@ -71,6 +71,19 @@ require('lazy').setup({
 
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
+  'ray-x/lsp_signature.nvim',
+
+  -- Themeing
+  -- { "bluz71/vim-nightfly-colors", name = "nightfly", lazy = false, priority = 1000 },
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+    config = function()
+      vim.cmd.colorscheme 'tokyonight-moon'
+    end,
+  },
 
   -- NOTE: This is where your plugins related to LSP can be installed.
   --  The configuration is done below. Search for lspconfig to find it below.
@@ -129,15 +142,15 @@ require('lazy').setup({
       end,
     },
   },
-
-  {
-    -- Theme inspired by Atom
-    'navarasu/onedark.nvim',
-    priority = 1000,
-    config = function()
-      vim.cmd.colorscheme 'onedark'
-    end,
-  },
+  --
+  --  {
+  --    -- Theme inspired by Atom
+  --    'navarasu/onedark.nvim',
+  --    priority = 1000,
+  --    config = function()
+  --      vim.cmd.colorscheme 'onedark'
+  --    end,
+  --  },
 
   {
     -- Set lualine as statusline
@@ -411,6 +424,17 @@ local on_attach = function(_, bufnr)
 
     vim.keymap.set('n', keys, func, { buffer = bufnr, desc = desc })
   end
+
+  require "lsp_signature".on_attach({
+    toggle_key = "<C-x>",
+    hint_enable = false, -- virtual hint
+    doc_lines = 0,       -- disable docs, just use `K` for that.
+    bind = true,
+    padding = " ",
+    handler_opts = {
+      boarder = "rounded"
+    },
+  }, bufnr)
 
   nmap('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
   nmap('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
