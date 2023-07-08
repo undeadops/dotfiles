@@ -18,12 +18,10 @@ return {
           hide_hidden = true,
           hide_gitignored = true,
           always_show = { -- remains visible even if other settings would normally hide it
-            ".vscode",
-            ".jenkinsfiles"
+            ".github",
           },
           never_show = {
             ".git",
-            ".github"
           }
         }
       }
@@ -31,4 +29,3 @@ return {
   end,
   vim.keymap.set('n', '<leader>e', '<Cmd>Neotree toggle<CR>', { desc = 'Show File [e]xplorer' })
 }
-
