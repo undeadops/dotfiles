@@ -119,3 +119,4 @@ if [ -f '/Users/mitch/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/mitch/goo
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/mitch/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/mitch/google-cloud-sdk/completion.zsh.inc'; fi
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"

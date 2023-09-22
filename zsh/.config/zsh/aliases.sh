@@ -20,6 +20,7 @@ alias kstgutil="kubectl --context=staging-east-1-utility-adminRole"
 alias kprod="kubectl --context=prod-east-1-adminRole"
 alias kprod2="kubectl --context=prod-east-1-secondary-adminRole"
 alias kprodutil="kubectl --context=prod-east-1-utility-adminRole"
+alias kshd="kubectl --context=shd-use2-adminRole"
 
 alias k9dev="k9s --context=dev-east-1-adminRole"
 alias k9dev2="k9s --context=dev-use2-adminRole"
@@ -31,6 +32,7 @@ alias k9stgutil="k9s --context=staging-east-1-utility-adminRole"
 alias k9prod="k9s --context=prod-east-1-adminRole"
 alias k9prod2="k9s --context=prod-east-1-secondary-adminRole"
 alias k9produtil="k9s --context=prod-east-1-utility-adminRole"
+alias k9shd="k9s --context=shd-use2-adminRole"
 
 # Automatically expand all aliases:
 # - don't forget the actual commands
