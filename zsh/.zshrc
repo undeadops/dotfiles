@@ -108,15 +108,4 @@ brew list thefuck &>/dev/null && eval $(thefuck --alias)
 autoload -U +X bashcompinit && bashcompinit 
 autoload -U +X compinit && compinit 
 
-export PATH="/opt/homebrew/opt/node@14/bin:$PATH"
-
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/mitch/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/mitch/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/mitch/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/mitch/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/mitch/google-cloud-sdk/completion.zsh.inc'; fi
-export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+export K9S_CONFIG_DIR=$HOME/.k9s
